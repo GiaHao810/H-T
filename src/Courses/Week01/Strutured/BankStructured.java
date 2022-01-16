@@ -2,7 +2,7 @@
 *  created date: Jan 11, 2022
 *  author: cgm
 */
-package Strutured;
+package Courses.Week01.Strutured;
 
 import java.util.Scanner;
 
