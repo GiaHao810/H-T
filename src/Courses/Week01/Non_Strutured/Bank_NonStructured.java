@@ -1,7 +1,3 @@
-/*
-*  created date: Jan 11, 2022
-*  author: cgm
-*/
 package Courses.Week01.Non_Strutured;
 
 import java.util.Scanner;
@@ -77,7 +73,8 @@ public class Bank_NonStructured {
         //Customer: hanh dong thao len data của Customer
         
         System.out.println("Hello World");
-
+        
+        input.close();
     }
     
 }

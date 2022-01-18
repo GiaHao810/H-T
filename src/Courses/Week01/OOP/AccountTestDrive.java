@@ -1,7 +1,3 @@
-/*
-*  created date: Jan 11, 2022
-*  author: cgm
-*/
 package Courses.Week01.OOP;
 
 public class AccountTestDrive {
