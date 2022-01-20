@@ -1,4 +1,4 @@
-package Week01.Bai_Tap_xoay_hinh;
+package Week01_BaiTap.Bai_Tap_xoay_hinh;
 
 // khuon de tao ra cac hinh khac nhau 
 public class Data_Vat_The {

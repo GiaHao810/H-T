@@ -1,8 +1,8 @@
-package Week01.Bai_Tap_xoay_hinh;
+package Week01_BaiTap.Bai_Tap_xoay_hinh;
 
 import java.util.Scanner;
 
-import Week01.Bai_Tap_xoay_hinh.cac_vat_the.*;
+import Week01_BaiTap.Bai_Tap_xoay_hinh.cac_vat_the.*;
 
 
 public class Ham_Chuc_Nan {

@@ -1,4 +1,4 @@
-package Week01.Bai_Tap_xoay_hinh;
+package Week01_BaiTap.Bai_Tap_xoay_hinh;
 
 public class Xoay_Main {
     public static void main(String[] args) {
