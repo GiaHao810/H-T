@@ -6,15 +6,13 @@ import Week01.Bai_Tap_xoay_hinh.cac_vat_the.*;
 
 
 public class Ham_Chuc_Nan {
-
-    
     void menu(){
         Circle cir = new Circle();
         Square squa = new Square();
         Triangle tri = new Triangle();
 
         Scanner input = new Scanner(System.in);
-            do{
+            while (input.nextLine().equalsIgnoreCase("y")) {
                 System.out.println("===========================================");
                 System.out.println("[1] Hình Tròn");
                 System.out.println("[2] Hình Vuông");
@@ -47,8 +45,7 @@ public class Ham_Chuc_Nan {
                         break;
                     }
                     System.out.print("Quay tro ve MENU lua chon ?(y/n): ");
-                }
-                    while(input.nextLine().equalsIgnoreCase("y"));         
+            }         
             }
         }
 
