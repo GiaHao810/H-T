@@ -45,7 +45,8 @@ public class Ham_Chuc_Nan {
                         break;
                     }
                     System.out.print("Quay tro ve MENU lua chon ?(y/n): ");
-            }         
+            }
+            input.close();         
             }
         }
 
