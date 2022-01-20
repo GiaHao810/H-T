@@ -2,21 +2,13 @@ package Week02_BaiTap;
 
 public class Shape_TestDrive {
     public static void main(String[] args) {
-        Circle cirOb = new Circle();
-        Square squaOb = new Square();
-        Triangle triOb = new Triangle();
-
-        cirOb.soundFile = "hinhtron.aif";
-        squaOb.soundFile = "hinhvuong.aif";
-        triOb.soundFile = "hinhtamgiac.aif";
-
-        cirOb.playSound();
+        Circle cirOb = new Circle("Vong tron");
         cirOb.rotate();
 
-        squaOb.playSound();
+        Square squaOb = new Square("Hinh Vuong");
         squaOb.rotate();
-
-        triOb.playSound();
+        
+        Triangle triOb = new Triangle("Hinh Tam Giac");
         triOb.rotate();
     }
 }
