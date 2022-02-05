@@ -10,5 +10,8 @@ public class Shape_TestDrive {
         
         Triangle triOb = new Triangle("Hinh Tam Giac");
         triOb.rotate();
+
+        Amoeba amoOb = new Amoeba("Amoeba", 5.5, 4.2);
+        amoOb.rotate();
     }
 }
