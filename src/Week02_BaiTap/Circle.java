@@ -2,7 +2,7 @@ package Week02_BaiTap;
 
 public class Circle {
     //Attribute
-    String soundFile;
+    private String soundFile;
 
     //Method
     public Circle(String soundFile){

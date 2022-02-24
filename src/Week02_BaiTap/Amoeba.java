@@ -1,9 +1,9 @@
 package Week02_BaiTap;
 
 public class Amoeba {
-    String soundFile;
-    double xPoint;
-    double yPoint;
+    private String soundFile;
+    private double xPoint;
+    private double yPoint;
 
     public Amoeba(String soundFile){
         this.soundFile = soundFile;

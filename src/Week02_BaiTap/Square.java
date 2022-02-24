@@ -1,7 +1,7 @@
 package Week02_BaiTap;
 
 public class Square {
-    String soundFile;
+    private String soundFile;
 
     public Square(String soundFile){
         this.soundFile = soundFile;

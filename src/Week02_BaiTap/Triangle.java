@@ -1,7 +1,7 @@
 package Week02_BaiTap;
 
 public class Triangle {
-    String soundFile;
+    private String soundFile;
 
     public Triangle(String soundFile){
         this.soundFile = soundFile;
