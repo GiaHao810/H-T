@@ -1,4 +1,4 @@
-package Week02_BaiTap;
+package Week02_BaiTap_Shape;
 
 public class Square {
     private String soundFile;
