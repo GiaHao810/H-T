@@ -1,5 +1,5 @@
 package Courses.Week03.buoi6.Thegioidongvat;
 
-public class Lion {
+public class Lion extends Animal {
     
 }

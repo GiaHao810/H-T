@@ -1,5 +1,5 @@
 package Courses.Week03.buoi6.Thegioidongvat;
 
-public class Hippo {
+public class Hippo extends Animal {
     
 }
