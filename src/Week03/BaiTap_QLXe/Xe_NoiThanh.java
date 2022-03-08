@@ -9,7 +9,6 @@ public class Xe_NoiThanh extends Vehicles_Infomation{
     private double km_Diduoc;
 
     protected void nhap_chuyen_xe(int so_luong) {
-        for (int i = 0; i <= so_luong; i++) {
             System.out.print("Ma so chuyen: ");
             this.trip_Code = input.nextInt();
 
@@ -27,15 +26,12 @@ public class Xe_NoiThanh extends Vehicles_Infomation{
 
             System.out.print("Doanh thu: ");
             this.total_Revenue = input.nextDouble();
-        }
     }
 
     public void xuat_chuyen_xe(){
-        for (int i = 0; i < array.length; i++) {
             System.out.println("Ma so chuyen: " + this.trip_Code);
             System.out.println("Ho ten tai xe: " + this.driver_Name);
             System.out.println("So xe: " + this.license_Plate);
             System.out.println("Doanh thu: " + this.total_Revenue);
-        }
     }
 }
