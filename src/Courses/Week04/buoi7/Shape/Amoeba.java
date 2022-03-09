@@ -2,7 +2,7 @@
 *  created date: Jan 20, 2022
 *  author: cgm
 */
-package Courses.Week04.buoi7;
+package Courses.Week04.buoi7.Shape;
 
 public class Amoeba extends Shape {
 

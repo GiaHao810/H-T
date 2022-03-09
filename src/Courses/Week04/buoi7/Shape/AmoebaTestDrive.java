@@ -2,7 +2,7 @@
 *  created date: Mar 08, 2022
 *  author: cgm
 */
-package Courses.Week04.buoi7;
+package Courses.Week04.buoi7.Shape;
 
 public class AmoebaTestDrive {
 
