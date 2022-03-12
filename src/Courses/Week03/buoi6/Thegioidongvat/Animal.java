@@ -23,5 +23,30 @@ public class Animal {
     protected void roam(){
         System.out.println("is roamming...");
     }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
+    public String getFood() {
+        return food;
+    }
+
+    public void setFood(String food) {
+        this.food = food;
+    }
+
+    public String getHunger() {
+        return hunger;
+    }
+
+    public void setHunger(String hunger) {
+        this.hunger = hunger;
+    }
+    
     
 }

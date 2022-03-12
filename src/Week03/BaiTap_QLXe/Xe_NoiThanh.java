@@ -1,37 +1,47 @@
 package Week03.BaiTap_QLXe;
 
-public class Xe_NoiThanh extends Vehicles_Infomation{
-    private int trip_Code;
-    private String driver_Name;
-    private String license_Plate;
-    private Double total_Revenue;
-    private int so_Tuyen;
-    private double km_Diduoc;
+public class Xe_NoiThanh extends ChuyenXe {
+        private int soTuyen;
+        private double kmDadi;
 
-    protected void nhap_chuyen_xe(int so_luong) {
-            System.out.print("Ma so chuyen: ");
-            this.trip_Code = input.nextInt();
+        public int getSoTuyen() {
+                return soTuyen;
+        }
 
-            System.out.print("Ho ten tai xe: ");
-            this.driver_Name = input.nextLine();
+        public void setSoTuyen(int soTuyen) {
+                this.soTuyen = soTuyen;
+        }
 
-            System.out.print("So xe: ");
-            this.license_Plate = input.nextLine();
+        public double getKmDadi() {
+                return kmDadi;
+        }
+
+        public void setKmDadi(double kmDadi) {
+                this.kmDadi = kmDadi;
+        }
+
+        protected void nhapXeNoiThanh() {
+            nhapChuyenXe();
 
             System.out.print("So tuyen: ");
-            this.so_Tuyen = input.nextInt();
+            setSoTuyen(input.nextInt());
 
             System.out.print("So km di duoc: ");
-            this.km_Diduoc = input.nextDouble();
+            setKmDadi(input.nextDouble());
+        }
 
-            System.out.print("Doanh thu: ");
-            this.total_Revenue = input.nextDouble();
-    }
+        public void xuatXeNoiThanh(){
+                xuatChuyenXe();
+                System.out.println("So tuyen: " + getSoTuyen());
+                System.out.println("So km di duoc: " + getKmDadi());
+        }
 
-    public void xuat_chuyen_xe(){
-            System.out.println("Ma so chuyen: " + this.trip_Code);
-            System.out.println("Ho ten tai xe: " + this.driver_Name);
-            System.out.println("So xe: " + this.license_Plate);
-            System.out.println("Doanh thu: " + this.total_Revenue);
-    }
+        public Xe_NoiThanh(){}
+
+        public Xe_NoiThanh(String maSoChuyen, String hoTenTX, String bienSoXe, double doanhThu, int soTuyen,
+                        double kmDadi) {
+                super(maSoChuyen, hoTenTX, bienSoXe, doanhThu);
+                this.soTuyen = soTuyen;
+                this.kmDadi = kmDadi;
+        }   
 }
