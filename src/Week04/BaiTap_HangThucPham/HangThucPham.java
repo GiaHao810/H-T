@@ -78,7 +78,7 @@ public class HangThucPham {
         if(tenHang != null){
             this.tenHang = tenHang;
         } else {
-            System.out.println("Ten hang khong duoc rong!");
+            System.out.println("Ten hang khong duoc rong!!");
             this.tenHang = "Default";
         }
     }
