@@ -84,8 +84,7 @@ public class ChuyenXe {
 
     @Override
     public String toString() {
-        return "ChuyenXe [bienSoXe=" + bienSoXe + ", doanhThu=" + doanhThu + ", hoTenTX=" + hoTenTX +
-                ", maSoChuyen=" + maSoChuyen + "]";
+        return "Ma so chuyen: " + getMaSoChuyen() + "\nHo ten tai xe: " + getHoTenTX() + "\nSo xe: " + getBienSoXe() + "\nDoanh thu: " + getDoanhThu();
     }
 
     

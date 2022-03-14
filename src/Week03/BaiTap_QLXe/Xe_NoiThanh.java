@@ -20,8 +20,8 @@ public class Xe_NoiThanh extends ChuyenXe {
                 this.kmDadi = kmDadi;
         }
 
-        protected void nhapXeNoiThanh() {
-            nhapChuyenXe();
+        protected void nhapChuyenXe() {
+            super.nhapChuyenXe();
 
             System.out.print("So tuyen: ");
             setSoTuyen(input.nextInt());
@@ -43,5 +43,12 @@ public class Xe_NoiThanh extends ChuyenXe {
                 super(maSoChuyen, hoTenTX, bienSoXe, doanhThu);
                 this.soTuyen = soTuyen;
                 this.kmDadi = kmDadi;
+        }
+
+        @Override
+        public String toString() {
+                return "Chuyen Xe Noi Thanh \n" + super.toString() + "\nSo tuyen: " + getSoTuyen() + "\nSo km di duoc: " + getKmDadi() + "\nDoanh thu: " + getDoanhThu();
         }   
+
+        
 }

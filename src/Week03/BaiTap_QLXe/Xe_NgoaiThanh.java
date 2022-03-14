@@ -20,8 +20,8 @@ public class Xe_NgoaiThanh extends ChuyenXe {
         this.ngayDadi = ngayDadi;
     }
 
-    protected void nhapXeNgoaiThanh() {
-        nhapChuyenXe();
+    protected void nhapChuyenXe() {
+        super.nhapChuyenXe();
 
         System.out.print("Noi den: ");
         setNoiDen(input.next());
@@ -32,7 +32,9 @@ public class Xe_NgoaiThanh extends ChuyenXe {
 
     public void xuatXeNgoaiThanh(){
         xuatChuyenXe();
+
         System.out.println("Noi den: " + getNoiDen());
+
         System.out.println("So ngay di duoc: " + getNgayDadi());
     }
 
@@ -44,4 +46,11 @@ public class Xe_NgoaiThanh extends ChuyenXe {
         this.noiDen = noiDen;
         this.ngayDadi = ngayDadi;
     }
+
+    @Override
+    public String toString() {
+        return "Chuyen Xe Ngoai Thanh\n" + super.toString() + "\nNoi den: " + getNoiDen() + "\nSo ngay di duoc: " + getNgayDadi() + "\nDoanh thu: " + getDoanhThu();
+    }
+
+    
 }

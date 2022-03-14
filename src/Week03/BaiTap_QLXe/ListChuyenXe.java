@@ -1,8 +1,9 @@
 package Week03.BaiTap_QLXe;
 
-public class ListChuyenXe extends Xe_NgoaiThanh{
+public class ListChuyenXe {
     ChuyenXe[] CX = new ChuyenXe[100];
     private int countCX = 0;
+    private double sumdt1 = 0, sumdt2 = 0;
 
     public void ListCX(){
         for(int i = 1; i < 100; i++){
@@ -17,14 +18,16 @@ public class ListChuyenXe extends Xe_NgoaiThanh{
             if(loaiXe == 1){
                 CX[countCX] = new Xe_NoiThanh();
                 Xe_NoiThanh xeNoiT = new Xe_NoiThanh();
-                xeNoiT.nhapXeNoiThanh();
+                xeNoiT.nhapChuyenXe();
                 CX[countCX] = xeNoiT;
+                sumdt1 += xeNoiT.getDoanhThu();
                 countCX++;
             } else {
                 CX[countCX] = new Xe_NgoaiThanh();
                 Xe_NgoaiThanh xeNgoaiT = new Xe_NgoaiThanh();
-                xeNgoaiT.nhapXeNgoaiThanh();
+                xeNgoaiT.nhapChuyenXe();
                 CX[countCX] = xeNgoaiT;
+                sumdt2 += xeNgoaiT.getDoanhThu();
                 countCX++;
             }
         }
@@ -32,8 +35,12 @@ public class ListChuyenXe extends Xe_NgoaiThanh{
 
     public void xuatDSXe(){
         for(int i = 0; i < this.countCX; i++){
-            System.out.println("--------------------------");
+            System.out.println("----------------------");
             System.out.println(CX[i].toString());
         }
+        System.out.println("----------Tong doanh thu------------");
+        System.out.println("Chuyen xe ngoai thanh: " + sumdt2);
+        System.out.println("Chuyen xe noi thanh: " + sumdt1);
+        System.out.println("-------------------------------");
     }
 }
