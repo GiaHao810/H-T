@@ -1,7 +1,5 @@
 package Week05.BaiTap3;
 
-import java.sql.Date;
-
 public class GDVang extends GiaoDich{
 
     private String loaiVang;
@@ -24,7 +22,7 @@ public class GDVang extends GiaoDich{
     public void nhapGD(){
         super.nhapGD();
         System.out.print("Nhap loai Vang: ");
-        setLoaiVang(input.next());
+        this.setLoaiVang(input.next());
     }
 
     @Override
@@ -32,6 +30,12 @@ public class GDVang extends GiaoDich{
         return super.tinhThanhTien(soLuong, donGia);
     }
 
-    
+    @Override
+    public String xuatDS() {
+        System.out.println("-----------Danh sach Giao Dich Vang--------------");
+        super.xuatDS();
+        System.out.println("Thanh tien: " + this.tinhThanhTien(getSoLuong(), getDonGia()));
+        return "Loai vang: " + this.loaiVang;
+    }
 }
 

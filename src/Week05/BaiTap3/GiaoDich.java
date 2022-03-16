@@ -68,16 +68,20 @@ public class GiaoDich {
     public void nhapGD(){
         System.out.println("---------------------");
         System.out.print("Nhap ma GD: ");
-        setMaGD(input.nextLine());
+        this.setMaGD(input.nextLine());
         System.out.print("Ngay GD (dd/MM/yyy):");
-        setNgayGD(input.nextLine());
+        this.setNgayGD(input.nextLine());
         System.out.print("Don gia: ");
-        setDonGia(input.nextDouble());
+        this.setDonGia(input.nextDouble());
         System.out.print("So luong: ");
-        setSoLuong(input.nextInt());
+        this.setSoLuong(input.nextInt());
     }
 
     public int tinhTongSL(){
         return soLuong;
+    }
+
+    public String xuatDS(){
+        return "Ma GD: " + this.getMaGD() + "\nNgay GD: " + getNgayGD() + "\nDon gia: " + getDonGia() + "\nSo luong: " + getSoLuong();
     }
 }

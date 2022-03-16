@@ -1,7 +1,5 @@
 package Week05.BaiTap3;
 
-import java.sql.Date;
-
 public class GDTienTe extends GiaoDich{
     private double tiGia;
     private int loaiTienTe; //1. USD 2. Euro 3. VN
@@ -36,10 +34,10 @@ public class GDTienTe extends GiaoDich{
     public void nhapGD() {
         super.nhapGD();
         System.out.print("Nhap ti gia: ");
-        setTiGia(input.nextDouble());
+        this.setTiGia(input.nextDouble());
         System.out.println("1. USD / 2. Euro / 3. VN");
         System.out.print("Nhap loai tien te: ");
-        setLoaiTienTe(input.nextInt());
+        this.setLoaiTienTe(input.nextInt());
 
     }
     @Override
@@ -51,5 +49,13 @@ public class GDTienTe extends GiaoDich{
         }
 
         return thanhTien;
+    }
+
+    @Override
+    public String xuatDS() {
+        System.out.println("--------Danh sach Giao Dich Tien Te----------");
+        super.xuatDS();
+        System.out.println("Thanh tien: " + this.tinhThanhTien(getSoLuong(), getDonGia()));
+        return "Ti gia: " + this.tiGia + "\nLoai tien te: " + this.loaiTienTe;
     }
 }
