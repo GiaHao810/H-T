@@ -52,10 +52,11 @@ public class GDTienTe extends GiaoDich{
     }
 
     @Override
-    public String xuatDS() {
+    public void xuatDS() {
         System.out.println("--------Danh sach Giao Dich Tien Te----------");
         super.xuatDS();
         System.out.println("Thanh tien: " + this.tinhThanhTien(getSoLuong(), getDonGia()));
-        return "Ti gia: " + this.tiGia + "\nLoai tien te: " + this.loaiTienTe;
+        System.out.println("Ti gia: " + tiGia);
+        System.out.println("Loai tien te: " + loaiTienTe);
     }
 }

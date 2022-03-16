@@ -31,11 +31,11 @@ public class GDVang extends GiaoDich{
     }
 
     @Override
-    public String xuatDS() {
+    public void xuatDS() {
         System.out.println("-----------Danh sach Giao Dich Vang--------------");
         super.xuatDS();
         System.out.println("Thanh tien: " + this.tinhThanhTien(getSoLuong(), getDonGia()));
-        return "Loai vang: " + this.loaiVang;
+        System.out.println("Loai Vang: " + loaiVang);
     }
 }
 

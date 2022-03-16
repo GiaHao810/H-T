@@ -81,7 +81,10 @@ public class GiaoDich {
         return soLuong;
     }
 
-    public String xuatDS(){
-        return "Ma GD: " + this.getMaGD() + "\nNgay GD: " + getNgayGD() + "\nDon gia: " + getDonGia() + "\nSo luong: " + getSoLuong();
+    public void xuatDS(){
+        System.out.println("Ma GD: " + getMaGD());
+        System.out.println("Ngay GD: " + getNgayGD());
+        System.out.println("Don gia: " + getDonGia());
+        System.out.println("So luong: " + getSoLuong());
     }
 }
