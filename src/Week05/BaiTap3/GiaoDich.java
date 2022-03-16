@@ -1,24 +1,27 @@
 package Week05.BaiTap3;
 
 import java.sql.Date;
+import java.util.Scanner;
 
 public class GiaoDich {
     private String maGD;
-    private Date ngayGD;
+    private String ngayGD;
     private double donGia;
     private int soLuong;
     private double thanhTien;
 
+    Scanner input = new Scanner(System.in);
+
     public GiaoDich(){}
     
-    public GiaoDich(String maGD, Date ngayGD, double donGia, int soLuong) {
+    public GiaoDich(String maGD, String ngayGD, double donGia, int soLuong) {
         this.maGD = maGD;
         this.ngayGD = ngayGD;
         this.donGia = donGia;
         this.soLuong = soLuong;
     }
 
-    private double getThanhTien(){
+    protected double getThanhTien(){
         return thanhTien;
     }
 
@@ -34,11 +37,11 @@ public class GiaoDich {
         this.maGD = maGD;
     }
 
-    public Date getNgayGD() {
+    public String getNgayGD() {
         return ngayGD;
     }
 
-    public void setNgayGD(Date ngayGD) {
+    public void setNgayGD(String ngayGD) {
         this.ngayGD = ngayGD;
     }
 
@@ -60,5 +63,21 @@ public class GiaoDich {
 
     public double tinhThanhTien(int soLuong, double donGia){
         return thanhTien = this.soLuong * this.donGia;
+    }
+
+    public void nhapGD(){
+        System.out.println("---------------------");
+        System.out.print("Nhap ma GD: ");
+        setMaGD(input.nextLine());
+        System.out.print("Ngay GD (dd/MM/yyy):");
+        setNgayGD(input.nextLine());
+        System.out.print("Don gia: ");
+        setDonGia(input.nextDouble());
+        System.out.print("So luong: ");
+        setSoLuong(input.nextInt());
+    }
+
+    public int tinhTongSL(){
+        return soLuong;
     }
 }
