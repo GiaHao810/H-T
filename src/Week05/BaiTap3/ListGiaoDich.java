@@ -37,7 +37,7 @@ public class ListGiaoDich {
     public void xuatGD(){
         for(int i = 0; i < countGD; i++){
             System.out.println("/-------------------/");
-            System.out.println(GD[i].xuatDS());
+            GD[i].xuatDS();
         }
         System.out.println("_______________________________");
         System.out.println("So luong Giao Dich Vang: " + slGDV);

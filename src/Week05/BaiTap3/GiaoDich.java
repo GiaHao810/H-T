@@ -1,6 +1,5 @@
 package Week05.BaiTap3;
 
-import java.sql.Date;
 import java.util.Scanner;
 
 public class GiaoDich {

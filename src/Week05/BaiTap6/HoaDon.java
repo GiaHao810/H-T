@@ -41,13 +41,12 @@ public class HoaDon {
 
     public HoaDon(){}
 
-    public HoaDon(String maHD, String ngayHD, String tenKH, String maPhong, double donGia, Scanner input) {
+    public HoaDon(String maHD, String ngayHD, String tenKH, String maPhong, double donGia) {
         this.maHD = maHD;
         this.ngayHD = ngayHD;
         this.tenKH = tenKH;
         this.maPhong = maPhong;
         this.donGia = donGia;
-        this.input = input;
     }
 
     public void nhapHD(){
