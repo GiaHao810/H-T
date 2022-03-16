@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class HoaDonTestDrive {
     public static void main(String[] args) {
+        //Tính trung bình thành tiền của hóa đơn thuê phòng trong tháng 9/2013
+
         ListHD dsHD = new ListHD();
         Scanner input = new Scanner(System.in);
 
