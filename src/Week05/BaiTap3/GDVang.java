@@ -34,7 +34,7 @@ public class GDVang extends GiaoDich{
     public void xuatDS() {
         System.out.println("-----------Danh sach Giao Dich Vang--------------");
         super.xuatDS();
-        System.out.println("Thanh tien: " + this.tinhThanhTien(getSoLuong(), getDonGia()));
+        System.out.println("Thanh tien: " + tinhThanhTien(getSoLuong(), getDonGia()));
         System.out.println("Loai Vang: " + loaiVang);
     }
 }
