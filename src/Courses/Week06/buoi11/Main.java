@@ -44,7 +44,7 @@ public class Main {
                     // double donGia = 50_000_000, dienTich = 500;
                     // char loaiDat = 'A';
 
-                    GiaoDichDat gdDat = new GiaoDichDat(maGD, sdf.parse(ngayGD), donGia, dienTich, loaiDat);
+                    GiaoDich gdDat = new GiaoDichDat(maGD, sdf.parse(ngayGD), donGia, dienTich, loaiDat);
                     
                     dsGD.them(gdDat);
                     break;
@@ -71,7 +71,7 @@ public class Main {
                     // dienTich = 1_000;
                     // String loaiNha = "CaoCap", diaChi = "Quan 1";
 
-                    GiaoDichNha gdNha = new GiaoDichNha(maGD, sdf.parse(ngayGD), donGia, dienTich, loaiNha, diaChi);
+                    GiaoDich gdNha = new GiaoDichNha(maGD, sdf.parse(ngayGD), donGia, dienTich, loaiNha, diaChi);
                     
                     dsGD.them(gdNha);
                     break;
