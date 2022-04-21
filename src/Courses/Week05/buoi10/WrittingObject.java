@@ -15,7 +15,6 @@ public class WrittingObject {
         ObjectOutputStream objOut = new ObjectOutputStream(outFile);
 
         HangThucPham htp = new HangThucPham("HTP01", "Mi Hao Hao", 3_500, new Date(), new Date());
-
         HangThucPham htp2 = new HangThucPham("HTP02", "Mi Gau Do", 4_000, new Date(), new Date());
 
         objOut.writeObject(htp);
