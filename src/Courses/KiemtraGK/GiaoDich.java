@@ -42,7 +42,7 @@ public class GiaoDich {
         return thanhTien;
     }
 
-    private void setThanhTien(double thanhTien) {
+    protected void setThanhTien(double thanhTien) {
         this.thanhTien = thanhTien;
     }
 

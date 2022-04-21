@@ -1,10 +1,6 @@
-package ThiCuoiKy;
+package Courses.Tests;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class Testing {
     public static void main(String[] args) throws ParseException {

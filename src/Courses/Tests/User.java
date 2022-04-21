@@ -1,4 +1,4 @@
-package ThiCuoiKy;
+package Courses.Tests;
 
 public class User {
     private String user;

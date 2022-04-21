@@ -1,8 +1,12 @@
-package ThiCuoiKy;
+package Courses.Tests;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.Date;
+
+import ThiCuoiKy.HangHoa;
+import ThiCuoiKy.HangThucPham;
 
 
 public class WrittingObject {
@@ -20,6 +24,7 @@ public class WrittingObject {
         //3.
         objOut.writeObject(sanpham1);
         objOut.writeObject(sanpham2);
+        objOut.writeObject(sanpham3);
 
         System.out.println(sanpham1);
 

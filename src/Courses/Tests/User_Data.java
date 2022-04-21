@@ -1,4 +1,4 @@
-package ThiCuoiKy;
+package Courses.Tests;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,6 @@ public class User_Data extends User{
 
     public User_Data(String user, String password) {
         super(user, password);
-        //TODO Auto-generated constructor stub
     }
 
     public User_Data() {

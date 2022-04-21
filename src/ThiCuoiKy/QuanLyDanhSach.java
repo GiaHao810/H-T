@@ -1,11 +1,14 @@
 package ThiCuoiKy;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class QuanLyDanhSach implements DanhGia{
+public class QuanLyDanhSach {
     private List<HangHoa> dsHH = new ArrayList<>();
 
     public void them(HangHoa hanghoaThem){
@@ -70,6 +73,10 @@ public class QuanLyDanhSach implements DanhGia{
     }
     public void inDanhSach(){
         for (HangHoa hangHoa : dsHH) {
+            if(dsHH.size() == 0){
+                System.out.println("Error: Danh sach rong!");
+                break;
+            }
             System.out.println(hangHoa + "\n");
         }
     }
@@ -122,12 +129,12 @@ public class QuanLyDanhSach implements DanhGia{
         }
         return check;
     }
-    //Thêm checkList() vào sơ đồ
     public String suaHangHoa(String maHang, HangHoa hanghoaSua){
         String result = "System: Sua that bai!";
         if(checkList(maHang)){
             for (HangHoa hangHoa : dsHH) {
                 if(hangHoa.getMaHang().equalsIgnoreCase(maHang)){
+                    hanghoaSua.setMaHang(maHang);
                     dsHH.set(timkiem_Vitri(maHang), hanghoaSua);
                     result = "System: Sua thanh cong!";
                 }
@@ -200,5 +207,23 @@ public class QuanLyDanhSach implements DanhGia{
     }
     public void getDanhGia(String maHang){
         danhGia(timkiem_HangHoa(maHang));
+    }
+    public void xuatFile() throws IOException{
+        BufferedWriter writer = new BufferedWriter(new FileWriter("Data.text"));
+
+        boolean check = true;
+
+        for (HangHoa hangHoa : dsHH) {
+            if(dsHH.size() == 0){
+                check = false;
+                System.out.println("Error: Danh sach rong!");
+                break;
+            }
+            writer.write(hangHoa.toString() + "\n");
+        }
+        if(check){
+            System.out.println("System: Xuat File Data.text thanh cong");
+        }
+        writer.close();
     }
 }

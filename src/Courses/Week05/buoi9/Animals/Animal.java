@@ -1,10 +1,6 @@
 package Courses.Week05.buoi9.Animals;
 
 public abstract class Animal {
-    private String picture;
-    private String food;
-    private int hunger;
-
     protected abstract void makeNoise();
 
     protected void roam() {

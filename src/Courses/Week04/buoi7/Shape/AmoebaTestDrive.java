@@ -8,7 +8,7 @@ public class AmoebaTestDrive {
 
     public static void main(String[] args) {
 
-        Amoeba amoeba = new Amoeba("Amoeba.hif", 5.5, 5.5);
+       // Amoeba amoeba = new Amoeba("Amoeba.hif", 5.5, 5.5);
         
     }
     

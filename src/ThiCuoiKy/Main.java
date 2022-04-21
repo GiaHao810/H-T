@@ -1,5 +1,6 @@
 package ThiCuoiKy;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
@@ -26,6 +27,7 @@ public class Main {
             System.out.println("6 - In danh sach");
             System.out.println("7 - In bang thong ke");
             System.out.println("8 - Lay danh gia");
+            System.out.println("9 - Xuat File");
             System.out.println("0 - Thoat chuong trinh");
             System.out.println("/----------------------/");
             int userKey = 0;
@@ -44,7 +46,7 @@ public class Main {
                     iConsole.catchEnter();
                     break;
                 case 2:
-                    System.out.println(danhSach.suaHangHoa(iConsole.nhapMaHang(), iConsole.nhapHang()));
+                    System.out.println(danhSach.suaHangHoa(iConsole.nhapMaHang(), iConsole.suaHang()));
                     iConsole.catchEnter();
                     break;
                 case 3:
@@ -85,6 +87,14 @@ public class Main {
                     break;
                 case 8:
                     danhSach.getDanhGia(iConsole.nhapMaHang());
+                    iConsole.catchEnter();
+                    break;
+                case 9:
+                    try {
+                        danhSach.xuatFile();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     iConsole.catchEnter();
                     break;
                 case 0:

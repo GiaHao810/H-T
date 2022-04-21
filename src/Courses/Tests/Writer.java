@@ -1,4 +1,4 @@
-package ThiCuoiKy;
+package Courses.Tests;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,16 +7,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Writer {
+
     public static void main(String[] args) throws IOException {
-        // BufferedWriter writer = new BufferedWriter(new FileWriter("data.text"));
+        BufferedWriter writer = new BufferedWriter(new FileWriter("data.text"));
 
+        writer.newLine();
+        writer.newLine();
 
-        // writer.write("Halo halo halo");
-
-        // writer.close();
+        writer.close();
         BufferedReader reader = new BufferedReader(new FileReader("data.text"));
-        String line;
-        while((line = reader.readLine()) != null){
+        while((reader.readLine()) != null){
             System.out.println(reader.readLine());
         }
         

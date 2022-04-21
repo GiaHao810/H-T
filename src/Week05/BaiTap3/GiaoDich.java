@@ -23,10 +23,6 @@ public class GiaoDich {
     protected double getThanhTien(){
         return thanhTien;
     }
-
-    private void setThanhTien(){
-        this.thanhTien = thanhTien;
-    }
     
     public String getMaGD() {
         return maGD;

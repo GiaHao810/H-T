@@ -13,7 +13,7 @@ public class HoaDonTheoGio extends HoaDon{
     public double getThanhTien() {
         return thanhTien;
     }
-    private void setThanhTien(double thanhTien) {
+    protected void setThanhTien(double thanhTien) {
         this.thanhTien = thanhTien;
     }
     public HoaDonTheoGio() {

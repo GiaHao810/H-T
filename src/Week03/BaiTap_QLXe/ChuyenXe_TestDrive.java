@@ -35,5 +35,6 @@ public class ChuyenXe_TestDrive {
                     break;
             }
         } while (loopCondition);
+        input.close();
     }
 }
